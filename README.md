@@ -15,9 +15,11 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 3. If you require SUDO to run docker and docker-compose run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run `./root-start.sh`.
 4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to `http://server-ip-address:81` and enter default username **admin&commat;example.com** and default password **changeme** ... you will be promted to change the username and password on first login.
 
-**Initial Setup and Help**
+**Initial Setup and Help:**
 
-Author's help and setup  guide -> [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  The guide is well layed out and easy to use and navigate.
+Author's help and setup  guide -> [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  
+The guide is well layed out and easy to use and navigate.
 
 
-**Credits:**  The amazing jc21 - https://nginxproxymanager.com/ and https://hub.docker.com/r/jc21/nginx-proxy-manager
+  ###### Credits:
+  The amazing jc21 - https://nginxproxymanager.com/ and https://hub.docker.com/r/jc21/nginx-proxy-manager
