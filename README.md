@@ -6,7 +6,7 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 
 ## Requirements:
 
-* Linux machine with bash shell
+* Linux machine, VM, LXC, or container with bash shell.  Machines will require virtualization enables.  VM &amp; Containers will require nested virtualization.
 * Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 * Docker installed ([Install Docker](https://docs.docker.com/get-docker/))
 * Docker-Compose installed ([Install Docker-Compose](https://docs.docker.com/compose/install/))
@@ -16,12 +16,12 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 1. `git clone https://github.com/kyle-thdi/nginx-reverse-proxy-in-docker.git`
 2. `cd nginx-reverse-proxy-in-docker`
 3. Starting the Container:  If you require SUDO to run docker and docker-compose, run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run `./root-start.sh` [then enter]
-4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to **http://server-ip-address:81** in your browser.  You should see the Nginx Proxy Manager login page.  Enter the default username **admin&commat;example.com** and the default password **changeme** ... you will be promted to change the username and password on first login.
+4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to **http://server-ip-address:81** in your browser.  You should see the Nginx Proxy Manager login page.  Enter the default username **admin&commat;example.com** and the default password **changeme** ... you will be prompted to change the username and password on first login.
 5. Stopping the Container:  If you require SUDO to run docker and docker-compose, run the stop script by typing `./sudo-stop.sh` [then enter] otherwise run `./root-stop.sh` [then enter]
 
 ## Initial Setup and Help:
 
-Author's help and setup  guide: [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  The guide is well layed out and easy to use and navigate.
+Author's help and setup  guide: [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  The guide is easy to use and navigate.
 
 <dl>
   <dt><em>Credits:<em></dt>
