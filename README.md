@@ -1,6 +1,6 @@
 # nginx-reverse-proxy-in-docker
 
-Runs Nginx Proxy Manager in docker a container with start and stop scripts.  Persists data and Let's Encrypt SSL certs via docker volumes/server directories "data" and "letsencryt".
+Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Persists data and Let's Encrypt SSL certs via docker volumes/server directories "data" and "letsencryt".
 
 **Requirements:**
 
