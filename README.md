@@ -5,7 +5,7 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 ## Requirements:
 
 * Linux machine with bash shell
-* Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
+* Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) tip: to open in a new tab, right-click on link &amp; choose "Open link in new tab")
 * Docker installed ([Install Docker](https://docs.docker.com/get-docker/))
 * Docker-Compose installed ([Install Docker-Compose](https://docs.docker.com/compose/install/))
 
