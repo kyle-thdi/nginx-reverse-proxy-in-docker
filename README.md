@@ -23,8 +23,8 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 
 Author's help and setup  guide: [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  The guide is easy to use and navigate.
 
-<dl>
-  <dt><em>Credits and Thanks:<em></dt>
-  <dd>The amazing jc21 and the many other [contributors](https://github.com/NginxProxyManager/nginx-proxy-manager/graphs/contributors) of https://nginxproxymanager.com/ and https://hub.docker.com/r/jc21/nginx-proxy-manager</dd>
+### ** Credits and Thanks:
+
+The amazing jc21 and the many other [contributors](https://github.com/NginxProxyManager/nginx-proxy-manager/graphs/contributors) of https://nginxproxymanager.com/ and https://hub.docker.com/r/jc21/nginx-proxy-manager
 </dl>
 
