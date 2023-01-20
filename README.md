@@ -13,11 +13,11 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 1. `git clone `
 2. `cd nginx-reverse-proxy-in-docker`
 3. If you require SUDO to run docker and docker-compose run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run `./root-start.sh`.
-4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to `http://server-ip-address:81` and enter default username __*/admin@example.com/*__ and default password **changeme** ... you will be promted to change the username and password on first login.
+4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to `http://server-ip-address:81` and enter default username **\admin@example.com\** and default password **changeme** ... you will be promted to change the username and password on first login.
 
 **Initial Setup and Help**
 
-The author provide an awesome and easy to use setup and instructions guide to help you out. [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal)
+Author's help and setup  guide -> [Setup and Help Guide](https://nginxproxymanager.com/guide/#project-goal).  The guide is well layed out and easy to use and navigate.
 
 
 **Credits:**  The amazing jc21 - https://nginxproxymanager.com/ and https://hub.docker.com/r/jc21/nginx-proxy-manager
