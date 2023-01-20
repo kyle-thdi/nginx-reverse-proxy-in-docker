@@ -12,9 +12,9 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 
 1. `git clone `
 2. `cd nginx-reverse-proxy-in-docker`
-3. Starting the Container:  If you require SUDO to run docker and docker-compose run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run `./root-start.sh` [then enter]
-4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to \http://server-ip-address:81\ and enter default username **admin&commat;example.com** and default password **changeme** ... you will be promted to change the username and password on first login.
-5. Stopping the Container:  If you require SUDO to run docker and docker-compose run the stop script by typing `./sudo-stop.sh` [then enter] otherwise run `./root-stop.sh` [then enter]
+3. Starting the Container:  If you require SUDO to run docker and docker-compose, run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run `./root-start.sh` [then enter]
+4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to **http://server-ip-address:81** and enter default username **admin&commat;example.com** and default password **changeme** ... you will be promted to change the username and password on first login.
+5. Stopping the Container:  If you require SUDO to run docker and docker-compose, run the stop script by typing `./sudo-stop.sh` [then enter] otherwise run `./root-stop.sh` [then enter]
 
 ## Initial Setup and Help:
 
