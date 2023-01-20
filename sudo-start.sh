@@ -22,6 +22,7 @@ FILE=docker-compose.yml
 
 if [ -f "$FILE" ]; then
     # docker-compose.yml found, run docker-compose up -d
+    cd docker
     sudo docker-compose up -d
 else 
     echo "$FILE does not exist and is required. Exiting."
