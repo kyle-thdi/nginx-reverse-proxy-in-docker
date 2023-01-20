@@ -4,13 +4,13 @@ Runs Nginx Proxy Manager in docker container with start and stop scripts.  Persi
 
 Requirements:
 
-- Docker installed
-- Docker-Compose installed
+* Docker installed
+* Docker-Compose installed
 
 Installation:
 
-1 - Clone Repo
-2 - cd reverse-proxy
-3 - ./start.sh
+1. Clone Repo
+2. `cd reverse-proxy`
+3. `./start.sh`
 
 Credits:  https://nginxproxymanager.com/ the amazing jc21 project (https://hub.docker.com/r/jc21/nginx-proxy-manager)
