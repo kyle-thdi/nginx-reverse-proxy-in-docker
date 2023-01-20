@@ -2,10 +2,12 @@
 
 Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Persists data and Let's Encrypt SSL certs via docker volumes/server directories "data" and "letsencryt".
 
+**TIP:** To open links in this readme in a new tab/window, right-click on the link and choose "Open link in new tab" or "Open link in new window"
+
 ## Requirements:
 
 * Linux machine with bash shell
-* Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) tip: to open in a new tab, right-click on link &amp; choose "Open link in new tab")
+* Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 * Docker installed ([Install Docker](https://docs.docker.com/get-docker/))
 * Docker-Compose installed ([Install Docker-Compose](https://docs.docker.com/compose/install/))
 
