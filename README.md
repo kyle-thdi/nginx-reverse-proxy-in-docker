@@ -6,7 +6,7 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 
 ## Requirements:
 
-* Linux physical machine, VM, LXC, or container with bash shell.  Phsyical machines will require virtualization enabled in BIOS.  VM &amp; Containers will need to enable nested virtualization (consult vendor documentation)
+* Linux physical machine, VM, LXC, or container with bash shell. 
 * Git installed ([Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 * Docker installed ([Install Docker](https://docs.docker.com/get-docker/))
 * Docker-Compose installed ([Install Docker-Compose](https://docs.docker.com/compose/install/))
