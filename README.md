@@ -17,11 +17,13 @@ Runs Nginx Proxy Manager in a docker container with start and stop scripts.  Per
 
 2. `cd nginx-reverse-proxy-in-docker`
 
-3. Start the Container:&nbsp;&nbsp;If you are using a sudo user to run docker and docker-compose (recommended), run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run the start/install script by typing `./root-start.sh` [then enter].  The `./root-start.sh` script is useful for Proxmox lxc containers where the base image has only a root user and sudo is not installed.
+3. Make the script files executable by typing `sudo chmod +w *.sh`
 
-4. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to **http://server-ip-address:81** in your browser.  You should see the Nginx Proxy Manager login page.  Enter the default username **admin&commat;example.com** and the default password **changeme** ... you will be prompted to change the username and password on first login.
+4. Start the Container:&nbsp;&nbsp;If you are using a sudo user to run docker and docker-compose (recommended), run the start/install script by typing `./sudo-start.sh` [then enter] otherwise run the start/install script by typing `./root-start.sh` [then enter].  The `./root-start.sh` script is useful for Proxmox lxc containers where the base image has only a root user and sudo is not installed.
 
-5. Stop the Container:&nbsp;&nbsp;If you are using a sudo user to run docker and docker-compose, run the stop script by typing `./sudo-stop.sh` [then enter] otherwise run the stop script by typing `./root-stop.sh` [then enter]. The `./root-stop.sh` script is useful for Proxmox lxc containers where the base image has only a root user and sudo is not installed.
+5. If everything runs without any errors and you see "Creating nginx-proxy-manager ... done", navigate to **http://server-ip-address:81** in your browser.  You should see the Nginx Proxy Manager login page.  Enter the default username **admin&commat;example.com** and the default password **changeme** ... you will be prompted to change the username and password on first login.
+
+6. Stop the Container:&nbsp;&nbsp;If you are using a sudo user to run docker and docker-compose, run the stop script by typing `./sudo-stop.sh` [then enter] otherwise run the stop script by typing `./root-stop.sh` [then enter]. The `./root-stop.sh` script is useful for Proxmox lxc containers where the base image has only a root user and sudo is not installed.
 
 ## Initial Setup and Help:
 
