@@ -3,7 +3,7 @@
 # set up variables
 DIRECTORY=docker
 FILE=docker-compose.yml
-CONTAINER_NAME = nginx-proxy-manager
+CONTAINER_NAME=nginx-proxy-manager
 CLONE_MSG="Use \"git clone https://github.com/kyle-thdi/nginx-reverse-proxy-in-docker.git\" again to ensure you have all required files"
 
 # ensure docker directory exists
@@ -16,17 +16,13 @@ fi
 
 cd $DIRECTORY
 
-if [ -f "$FILE" ]; then
-    # docker-compose.yml found, run docker-compose up -d
-    docker-compose down
-else 
-    echo "$FILE does not exist and is required. $CLONE_MSG."
-    exit
+if [ ! -f "$FILE" ]; then
+  echo "$FILE does not exist and is required. $CLONE_MSG."
+  exit
 fi
 
 # ensure docker package intalled
-if ! command -v docker  &> /dev/null
-then
+if ! command -v docker  &> /dev/null; then
     echo "The \"docker\" command could not be found - install docker and run this script again"
     exit
 fi
@@ -37,12 +33,16 @@ if ! command -v docker-compose &> /dev/null; then
     exit
 fi
 
-# ensure container is actually running
-if [ "$( docker container inspect -f '{{.State.Status}}' $CONTAINER_NAME )" == "running" ]; then 
-   echo "Shutting down container $conatainer_name now"
-   docker-compose down
+# ensure container exists and is actually running
+if [ $( docker ps -a | grep $CONTAINER_NAME | wc -l ) -gt 0 ]; then
+    if [ "$( docker container inspect -f '{{.State.Status}}' $CONTAINER_NAME )" == "running" ]; then 
+        echo "Shutting down container $CONTAINER_NAME now"
+        docker-compose down
+    else
+        echo "$CONTAINER_NAME is not running so there is nothing to stop"
+        exit;
+    fi
 else
-   echo "$CONTAINER_NAME is not running so there is nothing to stop"
-   exit;
+  echo "$CONTAINER_NAME is not running so there is nothing to stop"
+  exit;
 fi
-
