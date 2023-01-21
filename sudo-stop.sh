@@ -36,8 +36,8 @@ fi
 # ensure container exists and is actually running
 if [ $( docker ps -a | grep $CONTAINER_NAME | wc -l ) -gt 0 ]; then
     if [ "$( docker container inspect -f '{{.State.Status}}' $CONTAINER_NAME )" == "running" ]; then 
-        echo "Shutting down container $CONTAINER_NAME now"
-        sudo docker-compose down
+        echo "Stopping container $CONTAINER_NAME now"
+        sudo docker stop $CONTAINER_NAME
     else
         echo "$CONTAINER_NAME is not running so there is nothing to stop"
         exit;
